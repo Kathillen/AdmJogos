@@ -1,11 +1,11 @@
 // Games e ADM
 import {text} from "@clack/prompts";
 import { readFileSync, writeFileSync} from "fs"
-const log = console.log;
+const log = console.log;  // Para facilitar o uso do console.log
 
 //senhas
 const admGTA = "2702";
-const admRacer = "1412"
+const admRacer = "1412" 
 const passwordGTA = admGTA;
 const passwordRacer = admRacer;
 
@@ -35,7 +35,7 @@ function getNextPlayerKeyG(playersGTA){
     return `playerGTA${g}`
 }
 getNextPlayerKeyG(playersGTA)
-
+    
 //O mesmo para racer
 
 function getNextPlayerKeyRacer(playersRacer){
