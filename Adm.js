@@ -1,9 +1,9 @@
 // Games e ADM
 import {text} from "@clack/prompts";
 import { readFileSync, writeFileSync} from "fs"
-const log = console.log;  // Para facilitar o uso do console.log
+const log = console.log;  
 
-//senhas
+
 const admGTA = "2702";
 const admRacer = "1412" 
 const passwordGTA = admGTA;
@@ -11,8 +11,8 @@ const passwordRacer = admRacer;
 
 
 
-// funções para carregar e salvar os arquivos
-function changePlayers(path){ // esse paths é caminho em ingles
+
+function changePlayers(path){ 
     const raw = (readFileSync(path, "utf-8"))
     return raw ? JSON.parse(raw) : {};
 }
@@ -26,7 +26,6 @@ let playersGTA = changePlayers("playersGTA.json");
 let playersRacer = changePlayers("playersRacer.json");
 
 try{
-//Para que não aja erro ao adicionar players
 function getNextPlayerKeyG(playersGTA){
     let g = 1;
     while (playersGTA[`player${g}`]){
