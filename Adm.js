@@ -1,6 +1,6 @@
 // Games e ADM
 import {text} from "@clack/prompts";
-import { readFileSync, writeFileSync} from "fs"
+import { readFileSync, writeFileSync} from "node:fs"
 const log = console.log;  
 
 
